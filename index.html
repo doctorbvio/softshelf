@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f6f5f0">
+  <meta name="description" content="清晰分类、来源透明的免费软件下载站。探索办公、学习、生活、娱乐和游戏软件。">
+  <title>拾软 · 好软件，自由发现</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="拾软首页"><span class="brand-mark">拾<span>·</span></span><span>拾软 <small>SOFTSHELF</small></span></a>
+    <nav aria-label="主导航"><a class="nav-active" href="#explore">发现软件</a><a href="#about">关于本站</a><a href="#publish">上架说明</a></nav>
+    <a class="header-action" href="#explore">开始探索 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy"><p class="eyebrow"><span class="sparkle">✳</span> A LITTLE SPACE FOR GOOD SOFTWARE</p>
+        <h1 id="hero-title">让好软件，<br><em>被更多人发现。</em></h1>
+        <p class="hero-desc">一个认真整理免费软件的地方。从高效办公到放松娱乐，按你的需要，找到真正适合的工具。</p>
+        <a class="primary-btn" href="#explore">浏览全部软件 <span aria-hidden="true">↗</span></a>
+        <div class="hero-note"><span class="note-line"></span> 自由探索 · 来源透明 · 免费获取</div>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="orb orb-three"></div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="floating-symbol s1">✳</span><span class="floating-symbol s2">✦</span><span class="floating-symbol s3">◌</span><div class="art-caption">GOOD TOOLS.<br>BETTER DAYS.</div></div>
+      <div class="hero-bottom"><span>01 / 一个更简单的软件目录</span><span>向下探索 ↓</span></div>
+    </section>
+    <section class="intro-strip" aria-label="本站理念"><span>不必翻遍网络，好的工具都在这里。</span><span class="strip-star">✳</span><span>清楚的介绍，放心的来源，自由的选择。</span></section>
+    <section class="explore section-wrap" id="explore" aria-labelledby="explore-title">
+      <div class="section-heading"><div><p class="eyebrow section-index">01 — DISCOVER</p><h2 id="explore-title">找到你的<span class="serif-accent">下一款好软件。</span></h2><p>按场景挑选，也可以直接搜索你需要的工具。</p></div><span class="heading-mark" aria-hidden="true">✳</span></div>
+      <div class="explore-controls"><div class="filters" id="filters" role="group" aria-label="软件分类"><button class="filter active" data-category="all" aria-pressed="true">全部软件</button><button class="filter" data-category="office" aria-pressed="false">办公软件</button><button class="filter" data-category="learning" aria-pressed="false">学习软件</button><button class="filter" data-category="life" aria-pressed="false">生活软件</button><button class="filter" data-category="entertainment" aria-pressed="false">娱乐软件</button><button class="filter" data-category="games" aria-pressed="false">游戏软件</button></div><label class="search"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索软件名称或关键词" autocomplete="off" aria-label="搜索软件"></label></div>
+      <div class="results-meta"><span id="result-count">正在加载目录…</span><span>所有下载均标明来源与版本</span></div>
+      <div id="cards" class="cards" aria-live="polite"></div>
+      <div id="empty" class="empty" hidden><div class="empty-illustration" aria-hidden="true">✳</div><h3 id="empty-title">好软件，正在路上。</h3><p id="empty-text">目录正在筹备中。第一批软件发布后，就能在这里查看介绍与下载地址。</p><button id="clear-search" class="text-btn" hidden>清除筛选 ↗</button></div>
+    </section>
+    <section class="categories section-wrap" aria-labelledby="category-title"><div class="section-heading compact"><div><p class="eyebrow section-index">02 — CATEGORIES</p><h2 id="category-title">为每一种日常，<span class="serif-accent">留个位置。</span></h2></div></div><div class="category-grid"><a href="#explore" data-jump="office" class="category-tile c-office"><span class="tile-icon">▦</span><span class="tile-num">01 / WORK</span><h3>办公软件</h3><p>把繁琐留给工具，把时间留给自己。</p><span class="tile-arrow">↗</span></a><a href="#explore" data-jump="learning" class="category-tile c-learning"><span class="tile-icon">✳</span><span class="tile-num">02 / LEARN</span><h3>学习软件</h3><p>让每一份好奇心，都有生长的空间。</p><span class="tile-arrow">↗</span></a><a href="#explore" data-jump="life" class="category-tile c-life"><span class="tile-icon">◒</span><span class="tile-num">03 / LIVE</span><h3>生活软件</h3><p>让生活的小事，也能轻松一点。</p><span class="tile-arrow">↗</span></a><a href="#explore" data-jump="entertainment" class="category-tile c-entertainment"><span class="tile-icon">♫</span><span class="tile-num">04 / ENJOY</span><h3>娱乐软件</h3><p>忙里偷闲，给快乐多一种打开方式。</p><span class="tile-arrow">↗</span></a><a href="#explore" data-jump="games" class="category-tile c-games"><span class="tile-icon">✦</span><span class="tile-num">05 / PLAY</span><h3>游戏软件</h3><p>认真生活，也要尽情玩耍。</p><span class="tile-arrow">↗</span></a></div></section>
+    <section class="about" id="about"><div class="section-wrap about-inner"><div><p class="eyebrow">A NOTE FROM US</p><h2>简单一点，<br><em>真诚一点。</em></h2></div><div class="about-copy"><p>拾软是一个面向所有人的免费软件目录。我们希望让独立创作者的作品和其他可免费分发的软件，更容易被看见和使用。</p><p>每款软件都会标明开发者、适用系统、版本与下载来源。免费使用不等于允许转载；第三方软件仅在其许可允许分发时提供文件，否则链接至官方页面。</p><a href="#publish" class="about-link">了解上架原则 <span>↗</span></a></div></div></section>
+    <section class="publish section-wrap" id="publish"><div class="publish-card"><div><p class="eyebrow">COMING TO THE SHELF</p><h2>好作品，<em>值得被看见。</em></h2><p>软件目录将逐步开放。自研软件可以发布安装包；第三方免费软件须确认转载与分发许可。本站不接受未经授权的破解、捆绑或来历不明的软件。</p></div><a href="mailto:hello@example.invalid?subject=%E6%8B%BE%E8%BD%AF%E8%BD%AF%E4%BB%B6%E4%B8%8A%E6%9E%B6" class="publish-action" id="contact-link" hidden>联系上架 ↗</a><span class="publish-decoration" aria-hidden="true">✳</span></div></section>
+  </main>
+  <footer><div class="footer-top"><a class="brand footer-brand" href="#top"><span class="brand-mark">拾<span>·</span></span><span>拾软 <small>SOFTSHELF</small></span></a><p>为好软件，留一方小小的天地。</p></div><div class="footer-bottom"><span>© <span id="year"></span> 拾软 · 免费软件下载目录</span><span>软件版权归各自开发者所有 · 下载前请核对来源和校验值</span><a href="#top">返回顶部 ↑</a></div></footer>
+  <dialog id="details" class="details"><button class="close-dialog" aria-label="关闭详情">×</button><div id="details-content"></div></dialog>
+</body>
+</html>
